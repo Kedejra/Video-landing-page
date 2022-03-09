@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7b36db9d89.js" crossorigin="anonymous"></script>
+    
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/travel_style.css">
+    <title>Travel Destiny | Travel Agency</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel Destiny</h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="./media/Travel video 1.mp4" autoplay loop ></video>
+        <!-- There is a keyword muted than can be applied but i want the sound to play -->
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>We can help you</h2>
+            <h1>Live the Dream</h1>
+            <p>We have offer packages to locations in the Caribbean, South America, Europe and Australia. We organize group trips, honeymoons and weddings. Flying Solo ? We've got something for you too. Let us do what we do best; a getaway that can't be beat!</p>
+            <a href="#" id="home-btn">Explore</a>
+        </div>
+            <!-- Social Media -->
+            
+            <ul class="socials">
+            <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
+            <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+        </ul>
+      
+    </section>
+    <!-- Nav Sidebar -->
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Services</a></li> <!--services should be a dropdown including packages customization services n events-->
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Contact</a></li> <!--This should be an about info the section 2 has a contact-->
+            <li><a href="#" class="btn btn-book">Book Now</a></li>
+        </ul>
+    </div>
+    <!-- Java script on toggle and showcase  -->
+    <script>
+        const menuToggle= document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () =>
+        {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+
+        })
+    </script>
+</body>
+</html>
